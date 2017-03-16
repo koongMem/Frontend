@@ -35,10 +35,12 @@ res = {
         }
     }
 }
-```# 实操
-在标签添加'dbField'属性
+```
+# 实操
+
 ## html
 ```
+在标签添加'dbField'属性
 <p dbField="status"></p> ==> <p dbField="message">1</p>
 <p dbField="data.course.name"></p>  ==> <p dbField="data.course.name">name</p>
 <img dbField="data.avatarUrls.data.1"/> ==> <img dbField="data.avatarUrls.data.1" src="1.png"/>
