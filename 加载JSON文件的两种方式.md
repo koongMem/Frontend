@@ -1,5 +1,6 @@
 <h3>方法一：</h3>
 通过import直接引入，直接调用data即可获取json文件的内容。
+
 ```
 import data from 'static/h5Static.json'
 ```
@@ -9,6 +10,7 @@ import data from 'static/h5Static.json'
 <h3>方法二：</h3>
 通过axios请求的方式，可参考上一篇博客axios的封装<br/>
 1.在http.js中添加一个请求方法
+
 ```
 export const $getJson = function (method) {
   return new Promise((resolve, reject) => {
@@ -26,6 +28,7 @@ export const $getJson = function (method) {
   })
 ```
 2.接口的封装文件中引入$getJson请求方式
+
 ```
 import{$get,$post,$getJson}from '../http';
 
@@ -35,6 +38,7 @@ const getH5StaticJson = data => {
 }
 ```
 3.在组件中使用
+
 ```
 this.$api.user.getH5StaticJson({}).then(res => {
      consloe.log(res)
