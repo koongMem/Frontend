@@ -9,6 +9,7 @@ import data from 'static/h5Static.json'
 
 <h3>方法二：</h3>
 通过axios请求的方式，可参考上一篇博客axios的封装<br/>
+
 1.在http.js中添加一个请求方法
 
 ```
